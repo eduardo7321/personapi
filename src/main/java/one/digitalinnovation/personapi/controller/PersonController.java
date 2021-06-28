@@ -7,10 +7,23 @@ import one.digitalinnovation.personapi.exception.PersonNotFoundException;
 import one.digitalinnovation.personapi.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+
+/*
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+@Controller
+class HomeController{
+    @GetMapping(path="/")
+    public String homeInit(Model model) {
+        return "home";
+    }
+}
+*/
 
 @RestController
 @RequestMapping("/api/v1/people")
